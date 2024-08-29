@@ -77,9 +77,9 @@ body {
 }
 
 .menuitem:first-child {
-   background-color:#04AA6D;
-   color: white;
-   font-weight:bold;
+    background-color:#04AA6D;
+    color: white;
+    font-weight:bold;
 }
 
 a {
@@ -92,15 +92,14 @@ a:hover {
 }
 
 
-@media (max-width: 800px) {
+/* @media (max-width: 800px) {
     #sidebar {
         width: auto;
         position: relative;
     } 
     #main {
         margin-right: 0;
-    }    
-       
+    }   
 }
 
 @media (max-width: 600px) {
@@ -111,10 +110,10 @@ a:hover {
     #main {
         margin: 0;
     }    
-}
+} */
 </style>
 
-<style>/* Stylesheet 2: */
+<!-- <style>/* Stylesheet 2: */
 body {
     font-family: Arial;
     background-color: #d14836;
@@ -351,6 +350,8 @@ a {
 a:hover {
     color: #84c754;
 }
+
+
 @media (max-width: 600px) {
     #sidebar {
        width: auto;
@@ -359,9 +360,10 @@ a:hover {
     }    
 }
 
-</style>
+</style> -->
 
 </head>
+
 <body>
 
 <div class="container wrapper">
@@ -370,14 +372,14 @@ a:hover {
     <p>Use the menu to select different Stylesheets</p>
   </div>
   <div class="wrapper">
-   <div id="menubar">
-     <ul id="menulist">
-       <li class="menuitem" onclick="reStyle(0)">Stylesheet 1
-       <li class="menuitem" onclick="reStyle(1)">Stylesheet 2
-       <li class="menuitem" onclick="reStyle(2)">Stylesheet 3
-       <li class="menuitem" onclick="reStyle(3)">Stylesheet 4
-       <li class="menuitem" onclick="noStyles()">No Stylesheet
-     </ul>
+  <div id="menubar">
+    <ul id="menulist">
+      <li class="menuitem" onclick="reStyle(0)">Stylesheet 1
+      <li class="menuitem" onclick="reStyle(1)">Stylesheet 2
+      <li class="menuitem" onclick="reStyle(2)">Stylesheet 3
+      <li class="menuitem" onclick="reStyle(3)">Stylesheet 4
+      <li class="menuitem" onclick="noStyles()">No Stylesheet
+    </ul>
     </div>
     <div id="main">
       <h1>Same Page Different Stylesheets</h1>
@@ -387,9 +389,9 @@ a:hover {
       <a href="#" onclick="reStyle(2);return false">Stylesheet3</a>,
       <a href="#" onclick="reStyle(3);return false">Stylesheet4</a>.
       </p>
-       <h2>No Styles</h2>
+      <h2>No Styles</h2>
       <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:<br><a href="#" onclick="noStyles();return false">No Stylesheet</a>.</p>
-   </div>
+  </div>
     <div id="sidebar">
       <h3>Side-Bar</h3>
       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
@@ -402,7 +404,7 @@ a:hover {
   </div>
 </div>
 
-<script>
+<!-- <script>
 function noStyles() {
     document.styleSheets[0].disabled = true;
     document.styleSheets[1].disabled = true;
@@ -439,7 +441,7 @@ document.body.appendChild(div);
 //alert(document.getElementsByTagName("STYLE")[n].innerHTML);
 }
 reStyle(0);
-</script>
+</script> -->
 </body>
 </html>
 
