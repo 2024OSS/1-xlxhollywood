@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #212529;
+      color: #fff;
+    }
+    
+    
+
+    .container {
+    xmin-width: 900px;
+    position: relative;
+    /* 일반적인 문서 흐름에 따라 배치하되 상하좌우 위치 값에 따라 오프셋을 적용한다. */
+    overflow: auto; 
+    /* 컨텐츠가 가득 찼을 때 스크롤바 생성 */
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
+    }
+
+    .header {
+      height: 13px;
+    }
+
+    svg {
+      color: #fff;
+      margin-top: -17px;
+      padding-top: 0px;
+      position: absolute;
+    }
+
+    .fs-4 {
+      font-family: Arial, sans-serif;
+      color: #fff;
+      font-size: 24px;
+      margin-left: 50px;
+      margin-top: -14px;
+      padding-top: -10;
+      letter-spacing: -0.3px; /* 글자 간의 간격을 0.5px 줄임 */
+      position: absolute;
+    }
+
+    hr {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border: none;
+      border-top: 1px solid #4b545b; 
+    }
+
+    .main_contents {
+      background-color: #2c3034;
+      height: 320px;
+      border-radius: 8px;
+      padding: 3rem !important;
+      padding-top: 3rem !important;
+      padding-right: 3rem !important;
+      padding-bottom: 3rem !important;
+      padding-left: 4rem !important;
+    }
+
+    .main_contents h1 {
+      font-size: 3em;
+      margin-bottom: -10px;
+    }
+
+    .main_contents p {
+      line-height: 30px ;
+      font-size: 1.5em;
+    }
+
+    .footer_contents h1{
+      margin-bottom: -25px;
+    }
+
+    .footer_contents p {
+      line-height: 23px; 
+    }
+
+    .footer_container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* 박스 사이 간격 */
+    }
+
+    .footer_contents {
+    height: 230px;
+    margin-top: 30px;
+    flex: 1;
+    background-color: #2c3034;
+    padding: 30px 30px 30px 50px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+  }
+
+    #main_title{
+      margin-top: 45px;
+    }
+
+    #first_footer {
+      background-color: #212529; 
+    }
+
+    #second_footer {
+          border: 1px solid  #4b545b; 
+    }
+    
+    #copyright {
+      color: #c0bfbf; 
+    }
+
+    /* 버튼  */
+    
+    .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    }
+
+    .btn:hover {
+    opacity: 0.9;
+    } 
+
+    .btn-primary {
+    background-color: #0d6efd;
+    color: #fff;
+    border: none;
+    }
+
+    .btn-primary:hover {
+    background-color: #0a58ca;
+    }
+
+    .btn-outline {
+    background-color: transparent;
+    border: 1px solid;
+    }
+
+    .btn-outline:hover {
+    background-color: #f8f9fa;
+    }
+
+    .btn-light {
+    color: #f8f9fa;
+    border-color: #f8f9fa;
+    margin-top: -100px; /* 10px 위로 이동 */ 
+    width: 25%;
+    font-size: 1em;
+    padding-left: 0px;
+    padding-right: 0px;
+    
+    }
+
+    .btn-outline {
+    color: #f8f9fa;
+    border-color: #f8f9fa;
+    margin-top: 2px;
+    width: 25%;
+    font-size: 1em;
+    padding-left: 0px;
+    padding-right: 0px;
+    
+    }
+
+    .btn-light:hover {
+    color: #212529;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+    
+    }
+
+    .btn-secondary {
+    color: #6c757d;
+    border-color: #6c757d;
+    }
+
+    .btn-secondary:hover {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+    }
+
+
+
+
+
+  </style>
+
+</head>
+<body>
+  <main>
+    <div class="container">
+      <div class="header">
+        <a href="/" class="to main">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="me-2" viewBox="0 0 118 94" role="img"><title>Bootstrap</title><path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="currentColor"></path>
+          </svg>
+          <span class="fs-4">Jumbotron example</span>
+        </a>
+      </div>
+      <hr></hr>
+    
+      <div class="main_container">
+        <div class="main_contents">
+          <div id="main_title">
+            <h1>
+            Custom jumbotron
+            </h1>
+          </div>
+          <p>
+          Using a series of utilities, you can create
+          this jumbotron, just like the one in<br>previous
+          versions of Bootstrap. Check out the examples
+          below for how you<br> can remix and restyle it to 
+          your liking.
+          </p>
+          <a href="#" class="btn btn-primary">Example Button</a>
+        </div>
+      </div>
+      
+      <div class="footer_container">
+
+        <div class="footer_contents" id="first_footer">
+          <h1>
+          Change the background
+          </h1>
+          <p>
+            Swap the background-color utility and add a
+            '.text-*' color utility to mix <br> up the jumbotron
+            look. Then, mix and match with additional
+            component<br> themes and more.
+          </p>
+          <a href="#" class="btn btn-outline btn-light">Example Button</a>
+        </div>
+        <div class="footer_contents" id="second_footer">
+          <h1>
+            Add borders
+          </h1>
+          <p>
+            Or, keep it light and add a border for some added definition to the<br> boundaries of your content. Be sure to look under the hood at the source<br> HTML here as we've adjusted the alignment and sizing of both column's<br> content for equal-height.
+          </p>
+          <a href="#" class="btn btn-outline btn-secondary">Example Button</a>
+        </div>
+
+      </div>
+      <hr></hr>
+      <div id="copyright">© 2024</div>
+      </div>
+
+  </main>
+</body>
+</html>
+
